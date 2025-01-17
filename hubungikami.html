@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Muhammad, Aulia, and Bootstrap contributors">
+        <meta name="generator" content="Sultan 1.19.1">
+        <title>Latihan 2</title>
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="plusfolder.css" rel="stylesheet">
+<link href="carousel.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+    <header>
+<!-- ini untuk navigasi -->
+
+<nav class="navbar navbar-dark bg-warning fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">HaiBestie.Com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active  text-dark" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-dark" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+    </header> 
+
+<main>
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col text-center">
+<h1>Hubungi Kami</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <form  action="form.php" method="get">
+            <div class="mb-3">
+              <label  class="form-label">Nama Lengkap</label>
+              <input name="nama_lengkap" type="nama" class="form-control" required>
+             
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div  class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+              <label  class="form-label">Alamat</label>
+              <textarea name="alamat" class="form-control" placeholder="Isi Alamat Lengkap" id="floatingTextarea"></textarea>
+            </div>
+      
+                <div class="w-25 mb-3">
+                <label class="form-label">Tanggal :</label>
+                <input class="form-control" type="date" name="tanggal">
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label">Jenis Kelamin :</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jeniskelamin"  value="L" required>
+                    <label class="form-check-label" >Laki-laki</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jeniskelamin"  value="P">
+                    <label class="form-check-label" >Perempuan</label>
+                  </div>
+                </div>
+         
+                <div class="mb-3">
+                  <label  class="form-label">Hobi :</label>
+                <div class="form-check">
+                  <input name="Hobi1" class="form-check-input" type="checkbox" value="Memasak">
+                  <label class="form-check-label">Memasak</label>
+                </div>
+                <div class="form-check">
+                  <input name="Hobi2" class="form-check-input" type="checkbox" value="Olahraga">
+                  <label class="form-check-label">Olahraga</label>
+                </div>
+                <div class="form-check">
+                  <input name="Hobi3" class="form-check-input" type="checkbox" value="Memancing">
+                  <label class="form-check-label">Memancing</label>
+                </div>
+                <div class="form-check">
+                  <input name="Hobi4" class="form-check-input" type="checkbox" value="Menonton">
+                  <label class="form-check-label">Menonton</label>
+                </div>
+                <div class="form-check">
+                  <input name="Hobi5" class="form-check-input" type="checkbox" value="Balapan">
+                  <label class="form-check-label">Balapan</label>
+                </div>
+                <div class="form-check">
+                  <input name="Hobi6" class="form-check-input" type="checkbox" value="DLL">
+                  <label class="form-check-label">DLL</label>
+                </div>
+                </div>
+
+                <div class="mb-3 w-25">
+                  <label  class="form-label">Pendidikan Terakhir :</label>
+                <select name="PendidikanTerakhir" class="form-select" aria-label="Default select example">
+                  <option selected>--Pilih--</option>
+                  <option value="1">SD</option>
+                  <option value="2">SMP</option>
+                  <option value="3">SMA</option>
+                  <option value="4">S1</option>
+                  <option value="5">S2</option>
+                  <option value="6">S3</option>
+                
+                </select>
+                </div>
+
+
+            <input type="submit" class="btn btn-primary mt-3 mb-3" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+
+
+
+        
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
